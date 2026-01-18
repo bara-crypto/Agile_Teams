@@ -1,0 +1,163 @@
+
+/* Contact Preference Section */
+
+.proceed-type {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+
+
+.contact-preference {
+  padding: var(--gap-lg) 0;
+  color: var(--text);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-lg);
+  justify-content: center;
+}
+
+.contact-card {
+
+
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.person-speak
+{
+  background-image: url("C:/Users/balac/Desktop/project/person_call_centre_1.png");
+  background-size: cover;       /* scales image to cover entire container */
+  background-position: center;  /* keeps image centered */
+  background-repeat: no-repeat; /* prevents tiling */
+}
+
+.person-dail
+{
+  
+  
+  background-image: url("C:/Users/balac/Desktop/project/person_laptop_typing_1.png");
+  background-size: cover;       /* scales image to cover entire container */
+  background-position: center;  /* keeps image centered */
+  background-repeat: no-repeat; /* prevents tiling */
+}
+
+
+.contact-card input[type="radio"] {
+  accent-color: var(--card);
+  width: 18px;
+  height: 18px;
+  margin-right: 0.1rem;
+  cursor: pointer;
+}
+
+.contact-card .space-maker{
+  width: auto;
+  height: calc(var(--gap-lg) + 3rem);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--black);
+  opacity: 0.8;
+}
+
+.radio-label {
+  font-size: 0.9rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) - 0.5rem);
+
+  align-items: end;
+  justify-content: end;
+
+  
+}
+
+.card-content .content-piece-one
+{
+  padding: 0.2rem 0.9rem;
+  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255, 0.6);
+  box-shadow: 0 8px 32px rgb(0, 0, 0, 0.3);
+  text-align: end;
+  backdrop-filter: blur;
+  border-radius: var(--radius);
+  border: 2px solid rgba(255,255,255, 0.18);
+}
+
+.card-content h3 {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--black);
+  opacity: 0.8;
+}
+
+.card-content p {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--black);
+  opacity: 0.8;
+  margin: 0;
+}
+
+
+/* Proceed Button Section */
+
+
+.proceed-button{
+  align-self: center;
+}
+
+.proceed-btn {
+  padding: 0.9rem 4rem;
+  border-radius: var(--radius);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  color: var(--white);
+
+  font-weight: bold;
+}
+
+.proceed-btn .inside-btn{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+
+.proceed-btn:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+
+/* Responsive alignment */
+@media (max-width: 600px) {
+  .proceed-container {
+    padding: var(--gap) 0;
+  }
+  .proceed-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
