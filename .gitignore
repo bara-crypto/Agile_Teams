@@ -1,0 +1,4 @@
+node_modules/
+
+# this will be the file which goes into production
+dist/
